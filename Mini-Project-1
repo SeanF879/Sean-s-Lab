@@ -1,7 +1,7 @@
 ![Social Distance Detector - SOF](https://youtu.be/Xrc7W5Jpys4)
 
-1)  Yes it does seem to be effective at detecting social distance violations.  
+1)  No, it does not seem to be effective at detecting social distance violations.  It seems to create an outline of people and when the outlines come too close then it flags the lack of social distancing.
 
-2)  
+2)  I do not believe that this would be an effective measure of ifnection spread.  Many infections are spread by touching the same object, or from being close indoors/no masks.  This does not detect that it merely detects when two peopel are near each other.  I would probably try to implement this at places such as concerts or other large gatherings to ensure social distance.
 
-3)  
+3)  I would add the ability to create more outlines.  In other words, outlines for larger groups of people/ families as it is normal for families/roomates to be close to each other without violating Covid safety protocols.  Therefore, the ability to create perhaps pre-determined groups of people would be better for concerts/movie theaters, etc.. where people often go in family/roomate groups.
