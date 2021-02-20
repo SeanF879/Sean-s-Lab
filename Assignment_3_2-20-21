@@ -1,0 +1,24 @@
+1: I will be using convolutions in order to increase the efficacy of my neural network as they usually make the NN have better fit. The way that this happens is through the filters that I will be decribing next:
+First, you make the image's pixels become greyscale so that the processing becomes easier.  Then you assign each pixel a numeruical value that coresponds to its reative "strength". Now is the part where the Convolutions and filter come into play as the filter helps to further process the image by making it smaller (by taking the largest values of the pixels neighbors and exluced all others).  
+Then this process gets repeated over and over again across the entire image.  This intense processing of the image tends to accentuate features in the transformed image based on the filter, for instance, some filters can help emphasize vertical lines rather than horiztonal ones based on the filter.  This can allow your selected filter to be better at helping the computer to 'see' and then identify certain images.
+
+
+
+Generally: After applying a 3x3 array as a filter (in each case) because the edge pizels of every image do not have neighbors on each size, the dimension of the image is reduced by 2 on each axis.
+
+filter = [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]]
+By applying this filter, the resulting image has enhanced vertical lines.
+
+
+
+
+
+2:Question 2: The convolutional neural network also utilizes a filter method called pooling. Pooling decreases image resolution, which allows the machine to extract the features it needs while removing extraneous information, making the model training process more efficient while still retaining accuracy. Pooling works by diving the image into a grid with each box containing a specified number of pixels. The function next "looks" at these small boxes and only keeps the largest value. This is repeated for the entire image and the retained values are compiled into a new image containing only the largest values of each subsection (reduces size/resolution). Additionally, because I have my pooling setting to halve the dimension of the image in both directions, the new image is 1/4 of its original size (a 75% reduction in size).
+
+filter = [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]]
+By pooling, the resulting image has retained and further enhanced vertical lines with lower image quality.
+
+
+
+Stretch Goal:
+
