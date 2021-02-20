@@ -1,10 +1,7 @@
-1: I will be using convolutions in order to increase the efficacy of my neural network as they usually make the NN have better fit. The way that this happens is through the filters that I will be decribing next:
-First, you make the image's pixels become greyscale so that the processing becomes easier.  Then you assign each pixel a numeruical value that coresponds to its reative "strength". Now is the part where the Convolutions and filter come into play as the filter helps to further process the image by making it smaller (by taking the largest values of the pixels neighbors and exluced all others).  
-Then this process gets repeated over and over again across the entire image.  This intense processing of the image tends to accentuate features in the transformed image based on the filter, for instance, some filters can help emphasize vertical lines rather than horiztonal ones based on the filter.  This can allow your selected filter to be better at helping the computer to 'see' and then identify certain images.
+1: I will be using convolutions in order to increase the efficacy of my neural network as they usually make the NN have better fit. The way that this happens is through using filters.
+When you apply the filter to the original image it helps to process it to make is easier for the computer to "see" what is happening.  For insatnce, some basic processing also occuring iss turning the image to grayscale and then assigning a numerical value to every pixel based on saturation strength.
+This intense processing of the image tends to accentuate features in the transformed image based on the filter, for instance, some filters can help emphasize vertical lines rather than horiztonal ones based on the filter.  This can allow your selected filter to be better at helping the computer to 'see' and then identify certain images.
 
-
-
-Generally: After applying a 3x3 array as a filter (in each case) because the edge pizels of every image do not have neighbors on each size, the dimension of the image is reduced by 2 on each axis.
 
 The first filter I used is as below:
 [-1, -1, -1], [0, 0, 0], [1, 1, 1]
@@ -24,7 +21,7 @@ The third filter that I used is as below
 As we can see, this filter does not have very well defined lines.
 
 
-2:Question 2: The convolutional neural network also utilizes a filter method called pooling. Pooling decreases image resolution, which allows the machine to extract the features it needs while removing extraneous information, making the model training process more efficient while still retaining accuracy. Pooling works by diving the image into a grid with each box containing a specified number of pixels. The function next "looks" at these small boxes and only keeps the largest value. This is repeated for the entire image and the retained values are compiled into a new image containing only the largest values of each subsection (reduces size/resolution). Additionally, because I have my pooling setting to halve the dimension of the image in both directions, the new image is 1/4 of its original size (a 75% reduction in size).
+2:Question 2: What I am going to do now is using a filter method called pooling. What this will functionally do is further process the image by decreasing its resolution. This allows all "extra" information present in the image to be taken away, basically reducing it its almost the minimum "computer vision" needs to identify objects. The filter operates through splitting the image into a grid.  Inside each grid box are some pixels.  the computer then selects which box contains the most intense pixel (one with the highest numerical value/saturation) and then forgets about the rest.  An itneresting result is that the new image is 1/4 of its original size due to the computer "throwing out" the "extra" information.
 The 2x2 filter is as below: [10, 1, 0], [-5, -1, -5], [-7, 6, 0]
 ![Filter_2x2_Stairway_DL](https://user-images.githubusercontent.com/78227412/108608559-b17cce80-7395-11eb-940f-6bab265d79ef.png)
 As we can see, the pooling filter really makes the image pop and helps make the lines incredibly intense.
