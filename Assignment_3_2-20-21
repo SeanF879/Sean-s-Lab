@@ -6,9 +6,18 @@ Then this process gets repeated over and over again across the entire image.  Th
 
 Generally: After applying a 3x3 array as a filter (in each case) because the edge pizels of every image do not have neighbors on each size, the dimension of the image is reduced by 2 on each axis.
 
-filter = [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]]
-By applying this filter, the resulting image has enhanced vertical lines.
+The first filter I used is as below:
+[-1, -2, -1], [0, 0, 0], [1, 2, 1]
 ![Filter_7_Stairway_7](https://user-images.githubusercontent.com/78227412/108608493-34515980-7395-11eb-8322-cc291fc929bf.png)
+As we can see, ths filter seems very successful in 
+
+
+The second filter I used is as below:
+[-3, 6, -2], [1,-2,1], [0, -1, 0]
+
+
+
+The third filter that I used is as below
 
 
 
