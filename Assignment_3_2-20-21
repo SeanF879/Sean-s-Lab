@@ -27,7 +27,14 @@ The 2x2 filter is as below: [10, 1, 0], [-5, -1, -5], [-7, 6, 0]
 As we can see, the pooling filter really makes the image pop and helps make the lines incredibly intense.
 
 
-
+Convolution Solution:
+[0, 0, 0, 3, 0, 0, 0],
+[0, 0, 0, 3, 0, 0, 0],
+[1, 1, 1, 3, 1, 1, 1],
+[1, 1, 1, 3, 1, 1, 1],
+[1, 1, 1, 3, 1, 1, 1],
+[0, 0, 0, 3, 0, 0, 0],
+[0, 0, 0, 3, 0, 0, 0]
 
 Stretch Goal:
 
