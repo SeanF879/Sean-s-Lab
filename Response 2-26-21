@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+2:
+
+You use a filter to help emphasize horizontal/vertical lines in a computer image and reduces excess information present in the image not neccessary for identifying the content.  This helps to make image processing far more efficient and helps the computer to "see" more clearly to aid in the computer's identification process.
+
+Why would we include more than one filter? How many filters did you assign as part of your architecture when training a model to learn images of numbers from the mnist dataset?
+
+If you want to make more than one or two aspects of an image be more pronounced.  For instance one filter may help emphaize horizontal lines but another may help emphasize vertical lines.  So you include more than one.  Another reason could be to help make the image smaller (assuming no padding) to assist in processing speed.
+
+
+
+
+3:
+I chose Austin, Texas for the zillow scraper.
+
+Below are my 10 biggest over-predictions:
+
+MSE = 131777863
+
+Below are my 10 largest MSEs under-predictions summed:
+
+MSE = 26165686
+
+The below are my 10 most accurate (using absolute value):
+
+MSE = 25873
+
+In which percentile do the 10 most accurate predictions reside?
+
+The percentile was about the 45th percentile.  This indicates that potentially the model is overpredicting as the most accurate are below the 50th percentile which means I have more overpredictions than under.
+
+Did your model trend towards over or under predicting home values?
+
+My model trended towards over-predicting home values; 278 homes cost less than predicted, and 122 homes cost more than predicted.
+
+Which feature appears to be the most significant predictor in the above cases?
+
+For my model it appears as though bedrooms are the most significant.  This is because the most extereme over predictions have an unsually large number of bedrooms.
