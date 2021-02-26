@@ -41,4 +41,4 @@ My model trended towards over-predicting home values; 278 homes cost less than p
 
 Which feature appears to be the most significant predictor in the above cases?
 
-For my model it appears as though bedrooms are the most significant.  This is because the most extereme over predictions have an unsually large number of bedrooms.
+For my model it appears as though bedrooms are the most significant.  This is because the most extereme over predictions have an unsually large number of bedrooms.  Also this is because there is a relatively small number of bedrooms in homes (1-4 usually) when compared to the sqft/price (normally in the thousands/hundreds of thousands).  Therefore an increase in a few bedrooms would cause a huge effect on the predicted price.
