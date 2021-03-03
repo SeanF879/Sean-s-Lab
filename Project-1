@@ -11,7 +11,7 @@ The model architecture is like what was previously done on the February 5th info
 Model Output:
 The model outputs 3 plots
 Plot 1:  This plot has the model’s fit on the y axis and the epoch number on the x axis.  The model’s fit is a representation of how accurate it is.  This accuracy is important because it is an effective measure of how close to the true values the model’s predicted values are.  So, a model with perfect fit can perfectly predict the output given the inputs, which is what we are trying to do here.  The epoch number is simply how many iterations the machine has had to learn how to best minimize loss to maximize fit to make the model as good of a predictor as it can be.  
-
+![Plot 1](your_image_file.png)
 
 Plot 2:  This is a plot with the true value of asking price on the x-axis and the predicted model value on the y axis.  This plot indicates that the model has a habit of overpredicting as most observations are to the left of the 45-degree line.  The reason for this is also shown in the plot as there are multiple massively underpredicted homes on the market.  A few homes that were predicted to have a relatively lower price had significantly higher asking prices that has skewed the data.
 
