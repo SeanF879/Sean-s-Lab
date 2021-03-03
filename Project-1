@@ -8,16 +8,21 @@ This indicates that there were quite a few outliers towards the top of the distr
 Model Architecture:
 The model architecture is like what was previously done on the February 5th informal response.  In this one specifically, we used the Sequential function with a single dense layer.  In the dense was 3 inputs, the 3 inputs beings the independent (predictor) variables used: square footage, number of bedrooms, and number of bathrooms.  The function then used a compiler to tell it to use ‘sgd’ as the optimizer and ‘mean_sqaured_error’ as the loss function.  Some variables however needed to be scaled down for processing otherwise the function would not run properly and would return NaN.  Therefore the prices of the homes were scaled down by dividing them by 100000 and the square footage of the homes by 1000.  The predictor variable arrays then were stacked and fitted against the desired output variable (home asking price) and ran 500 times.  Each time, or epoch, the machine used its loss function and optimizer to reduce loss and maximize fit.  Using Pandas, the model was then put into a dataframe and the difference between the actual asking price and predicted asking price was used to calculate the “best deal”.  
 
+
+
 Model Output:
 The model outputs 3 plots
 Plot 1:  This plot has the model’s fit on the y axis and the epoch number on the x axis.  The model’s fit is a representation of how accurate it is.  This accuracy is important because it is an effective measure of how close to the true values the model’s predicted values are.  So, a model with perfect fit can perfectly predict the output given the inputs, which is what we are trying to do here.  The epoch number is simply how many iterations the machine has had to learn how to best minimize loss to maximize fit to make the model as good of a predictor as it can be.  
-![Plot 1](your_image_file.png)
+![Plot_1](https://user-images.githubusercontent.com/78227412/109752337-3f369600-7bae-11eb-8302-2460dd46cd4b.png)
+
 
 Plot 2:  This is a plot with the true value of asking price on the x-axis and the predicted model value on the y axis.  This plot indicates that the model has a habit of overpredicting as most observations are to the left of the 45-degree line.  The reason for this is also shown in the plot as there are multiple massively underpredicted homes on the market.  A few homes that were predicted to have a relatively lower price had significantly higher asking prices that has skewed the data.
-
+![Plot_2](https://user-images.githubusercontent.com/78227412/109752342-4067c300-7bae-11eb-84d6-5e5bdd547c51.png)
 
 Plot 3:  This plot has a scale of a home’s square feet on the x-axis and the number of bedrooms in a home on the y-axis.  I wanted to do this graph to examine home layout in Austin, Texas.  This graph indicates that the number of bedrooms in a home increases at a faster rate than square footage up until a certain point when the number of bedrooms begins the level off at around 5 bedrooms.  This is most likely because of a few reasons.  The first being that as a home grows in physical size (square footage) bedrooms are one of the most important rooms in the house so the number of bedrooms grows faster than the relative square footage 
 (proportion of house that is bedroom grows).  This changes after about 5 or 6 bedrooms as eventually you simply run out of need for the bedrooms on large estates.  This graph was the most interesting because although it does not directly represent the output of the model, price, it indicates consumer preferences and how they like their homes which can tell us more about how houses are priced and why people buy them.  
+![Plot_3](https://user-images.githubusercontent.com/78227412/109752346-4198f000-7bae-11eb-85ff-7e3bc8c9d470.png)
+
 
 Ranking:
 
