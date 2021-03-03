@@ -12,7 +12,7 @@ The model architecture is like what was previously done on the February 5th info
 
 Model Output:
 The model outputs 3 plots
-Plot 1:  This plot has the model’s fit on the y axis and the epoch number on the x axis.  The model’s fit is a representation of how accurate it is.  This accuracy is important because it is an effective measure of how close to the true values the model’s predicted values are.  So, a model with perfect fit can perfectly predict the output given the inputs, which is what we are trying to do here.  The epoch number is simply how many iterations the machine has had to learn how to best minimize loss to maximize fit to make the model as good of a predictor as it can be.  
+Plot 1:  This plot has the model’s fit on the y axis and the epoch number on the x axis.  The model’s fit is a representation of how accurate it is.  This accuracy is important because it is an effective measure of how close to the true values the model’s predicted values are.  So, a model with perfect fit can perfectly predict the output given the inputs, which is what we are trying to do here.  The epoch number is simply how many iterations the machine has had to learn how to best minimize loss to maximize fit to make the model as good of a predictor as it can be. Therefore this plot shows us that the loss rapidly diminished in the first few epochs and then leveled off afterwards. 
 ![Plot_1](https://user-images.githubusercontent.com/78227412/109752337-3f369600-7bae-11eb-8302-2460dd46cd4b.png)
 
 
