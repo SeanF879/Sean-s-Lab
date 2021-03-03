@@ -23,6 +23,9 @@ Plot 3:  This plot has a scale of a home’s square feet on the x-axis and the n
 (proportion of house that is bedroom grows).  This changes after about 5 or 6 bedrooms as eventually you simply run out of need for the bedrooms on large estates.  This graph was the most interesting because although it does not directly represent the output of the model, price, it indicates consumer preferences and how they like their homes which can tell us more about how houses are priced and why people buy them.  
 ![Plot_3](https://user-images.githubusercontent.com/78227412/109752346-4198f000-7bae-11eb-85ff-7e3bc8c9d470.png)
 
+Plot 4:
+The below plot is probably the least empirical plot I made.  It is a pie chart cointaining the relative proportions of high cost (Over twice the national median home cost and above), medium cost (1-2x the national median), and low cost (National median and below) homes in Austin, Texas from the 400 that I scraped.  This matches pretty well with a few city's national averages but it is likley that I scraped a few very high cost homes from zillow that throw off some results as the number of homes that are relatively expensive here are rather high.
+![Plot_4](https://user-images.githubusercontent.com/78227412/109832917-d4697700-7c0e-11eb-92a0-10a6e097485b.png)
 
 Ranking:
 
