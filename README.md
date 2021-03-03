@@ -7,5 +7,4 @@
 
 ### Projects
 
-Project 1
-
+[Project 1](https://github.com/SeanF879/Sean-s-Lab/blob/main/Project-1)
