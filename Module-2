@@ -1,1 +1,12 @@
+Import the households dataset for your selected country and create a data frame with a variable that describes each of the following:
+
+
+Below is a brief description in R of the original dataset and variables being used/processed:
+
+
+Below is the processed dataset containing all information to be used in our analysis:
+
+
+Below are the Raw, Normalized, Percentized, and Scaled heatmaps, in that order:
+
 
