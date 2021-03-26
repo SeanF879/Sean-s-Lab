@@ -1,9 +1,3 @@
-Penalized logisistic Regression and random forest models are from R:
-
-
-Below are the output from top_models:
-
-
 
 Model 1:
 
@@ -47,7 +41,7 @@ Here are the evaluative metrics as they appear in python:
 
 Below is the ROC Curve for model 3:
 
-![ROC Curve first](https://user-images.githubusercontent.com/78227412/112562117-fc32a180-8dac-11eb-8f67-9ac0d213bae5.png)
+![ROC_FIRST](https://user-images.githubusercontent.com/78227412/112573147-10cd6480-8dc2-11eb-822d-3f2cd5dffa03.png)
 
 Below is for the predicted probabilities for model 3:
 
@@ -83,28 +77,15 @@ Below is for the predicted probabilities for model 4:
 
 ![pred-prob_second](https://user-images.githubusercontent.com/78227412/112562098-f50b9380-8dac-11eb-9820-9dcc0c9cd6cf.png)
 
-The predicted porabilites shows that most of the values are more evenly spread out across the distribution than for model 3.  This indicates a probably more fair evaluation of the predicted values than for the previous model, which most likely overpredicted the lower values.  
+The predicted porabilites shows that most of the values are more evenly spread out across the distribution than for model 3.  This indicates a probably more fair evaluation of the predicted values than for the previous model, which most likely overpredicted the lower values.  Also, for the ROC curve the AUC was .81, which was the highest out of any model I had, indicating that potentially this model would be the best as it's predictave power is significantly better than simple random chance.
 
 
 
 Analyze all four models. According to the evaluation metrics, which model produced the best results? Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
 
 
+The model that preformed the best was the final one, Model 4, the gradient boosting model using decision trees.  Its AUC was .81 which was higher than I expected for any of my models.
 
-
-
-
-![last_rf_fit](https://user-images.githubusercontent.com/78227412/112562079-ea50fe80-8dac-11eb-950e-a2170539d9e0.png)
-![last_rf_fit_auc](https://user-images.githubusercontent.com/78227412/112562085-ec1ac200-8dac-11eb-93cd-bcec6158eb45.png)
-![lr_auc](https://user-images.githubusercontent.com/78227412/112562089-ede48580-8dac-11eb-9c1a-c3a04884711e.png)
-![lr_plot](https://user-images.githubusercontent.com/78227412/112562092-ef15b280-8dac-11eb-88d8-7ea4e73b91a2.png)
-![Pred_prob_Second](https://user-images.githubusercontent.com/78227412/112562094-f1780c80-8dac-11eb-8eb8-f3caea2bc6fd.png)
-![pred-prob_second](https://user-images.githubusercontent.com/78227412/112562098-f50b9380-8dac-11eb-9820-9dcc0c9cd6cf.png)
-![pred-prob-first](https://user-images.githubusercontent.com/78227412/112562101-f6d55700-8dac-11eb-8f17-f25add592cca.png)
-![rf_auc](https://user-images.githubusercontent.com/78227412/112562107-f89f1a80-8dac-11eb-91d6-b7eca7476aaa.png)
-![rf_lr_auc](https://user-images.githubusercontent.com/78227412/112562110-f9d04780-8dac-11eb-9de9-4b69e0a739b1.png)
-![rf_res](https://user-images.githubusercontent.com/78227412/112562113-fb017480-8dac-11eb-82bc-62a9bedc45c7.png)
-![ROC Curve first](https://user-images.githubusercontent.com/78227412/112562117-fc32a180-8dac-11eb-8f67-9ac0d213bae5.png)
-![ROC_Curve_Second_Script](https://user-images.githubusercontent.com/78227412/112562119-fd63ce80-8dac-11eb-9371-54fc5c11261e.png)
+There were some discrepancies found.  For instance, it was best at predicting the extremes of the data, as in those with the lowest and highest relative wealth levels.  However, when it came to the middle brackets, it struggled to properly predict better than random chance.  Perhaps this indicates something within Ghana or even more generally that the middle wealth brackets are more non-homogenous groups than the extremes. of individuals who fall somewhere in the middle. This discrepancy in performance suggests that the Philippines may have very high income inequality, given that the lowest and highest income brackets seem to be so far from the middle brackets.
 
 
