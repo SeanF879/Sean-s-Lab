@@ -8,7 +8,7 @@ Below are the output from top_models:
 
 The AUC curve can be found below:
 
-lr_plot
+![lr_plot](https://user-images.githubusercontent.com/78227412/112562092-ef15b280-8dac-11eb-88d8-7ea4e73b91a2.png)
 
 
 Q: Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
@@ -22,7 +22,7 @@ Q: Provide justification for your selected penalty value?
 
 ####The AUC to penalty curve can be found below. Note that the x-axis is not in a linear scale, equidistant points on the x direction share the same ratio in penalty values instead of difference.
 
-(((((lr_plot here:))))
+![lr_plot](https://user-images.githubusercontent.com/78227412/112562092-ef15b280-8dac-11eb-88d8-7ea4e73b91a2.png)
 
 ###It appears that the AUC gradually decreased from the first model (penalty value = 0.001) to the 21st model (penalty value = 0.0117210), and stayed steady towards the 24th model (penalty value = 0.0239503), after which the AUC dropped significantly, then stayed steady again from the 27th model (penalty value = 0.0489390) to the 29th model (penalty value = 0.0788046). From this, I think the irrelevant predictors are gradually removed from the model throughout the first to 21st model (penalty value from 0.001 to 0.0117210), after which relevant predictors were removed from the model, resulting in significant drops in the AUC.
 
@@ -30,7 +30,7 @@ Q: Provide justification for your selected penalty value?
 
 ##The ROC plot of the model is as follows:
 
-((((lr_auc plot here:))))
+![lr_auc](https://user-images.githubusercontent.com/78227412/112562089-ede48580-8dac-11eb-9c1a-c3a04884711e.png)
 
 
 
@@ -44,15 +44,13 @@ Here are the evaluative metrics:
 (((FRom python code, then view result in bottom right)))
 {'accuracy': 0.8678867, 'accuracy_baseline': 0.86151326, 'auc': 0.80184686, 'auc_precision_recall': 0.377051, 'average_loss': 0.31925312, 'label/mean': 0.13848676, 'loss': 0.31925312, 'precision': 0.58536583, 'prediction/mean': 0.14456409, 'recall': 0.15779093, 'global_step': 100}
 
-Below is the ROC Curve
+Below is the ROC Curve for model 3:
 
-(((((Here is for ROC Curve First))))
+![ROC Curve first](https://user-images.githubusercontent.com/78227412/112562117-fc32a180-8dac-11eb-8f67-9ac0d213bae5.png)
 
+Below is for the predicted probabilities for model 3:
 
-Below is for the predicted probs
-
-(((here for pred-prob first)))
-
+![pred-prob-first](https://user-images.githubusercontent.com/78227412/112562101-f6d55700-8dac-11eb-8f17-f25add592cca.png)
 
 MODEL 4
 Below are the evaluation metrics:
@@ -69,13 +67,32 @@ prediction/mean	0.156752
 recall	0.000000
 global_step	100.000000
 
-Below is the ROC Curve
+Below is the ROC Curve for model 4:
 
-(((here for ROC Curve second)))
+![ROC_Curve_Second_Script](https://user-images.githubusercontent.com/78227412/112562119-fd63ce80-8dac-11eb-9371-54fc5c11261e.png)
 
-Below is for the predicted probs
+Below is for the predicted probabilities for model 4:
 
-(((Here is for pred-probs second)))
+![pred-prob_second](https://user-images.githubusercontent.com/78227412/112562098-f50b9380-8dac-11eb-9820-9dcc0c9cd6cf.png)
 
+
+
+
+
+
+
+
+![last_rf_fit](https://user-images.githubusercontent.com/78227412/112562079-ea50fe80-8dac-11eb-950e-a2170539d9e0.png)
+![last_rf_fit_auc](https://user-images.githubusercontent.com/78227412/112562085-ec1ac200-8dac-11eb-93cd-bcec6158eb45.png)
+![lr_auc](https://user-images.githubusercontent.com/78227412/112562089-ede48580-8dac-11eb-9c1a-c3a04884711e.png)
+![lr_plot](https://user-images.githubusercontent.com/78227412/112562092-ef15b280-8dac-11eb-88d8-7ea4e73b91a2.png)
+![Pred_prob_Second](https://user-images.githubusercontent.com/78227412/112562094-f1780c80-8dac-11eb-8eb8-f3caea2bc6fd.png)
+![pred-prob_second](https://user-images.githubusercontent.com/78227412/112562098-f50b9380-8dac-11eb-9820-9dcc0c9cd6cf.png)
+![pred-prob-first](https://user-images.githubusercontent.com/78227412/112562101-f6d55700-8dac-11eb-8f17-f25add592cca.png)
+![rf_auc](https://user-images.githubusercontent.com/78227412/112562107-f89f1a80-8dac-11eb-91d6-b7eca7476aaa.png)
+![rf_lr_auc](https://user-images.githubusercontent.com/78227412/112562110-f9d04780-8dac-11eb-9de9-4b69e0a739b1.png)
+![rf_res](https://user-images.githubusercontent.com/78227412/112562113-fb017480-8dac-11eb-82bc-62a9bedc45c7.png)
+![ROC Curve first](https://user-images.githubusercontent.com/78227412/112562117-fc32a180-8dac-11eb-8f67-9ac0d213bae5.png)
+![ROC_Curve_Second_Script](https://user-images.githubusercontent.com/78227412/112562119-fd63ce80-8dac-11eb-9371-54fc5c11261e.png)
 
 
