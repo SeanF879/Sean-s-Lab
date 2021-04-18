@@ -1,3 +1,5 @@
+<img width="805" alt="Kenya_1" src="https://user-images.githubusercontent.com/78227412/115165747-67eeee00-a07d-11eb-92b9-0412b4a7dafa.png">
+<img width="832" alt="Kenya_2" src="https://user-images.githubusercontent.com/78227412/115165749-69201b00-a07d-11eb-810b-31d53e5e3fb8.png">
 The country chosen for this project was Kenya. For the project I initially downloaded many different geospatial data types, ranging from the topography to night time light.  
 
 Two models, a linear regression model and a random forest model, were run to predict population distribution in Zambia. The predicted values were compared to known population data through mapping, mean square error calculation, and plotting of statistics (mean square error, absolute square error, and root mean square error).
