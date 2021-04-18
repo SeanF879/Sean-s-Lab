@@ -10,3 +10,4 @@
 
 [Project 1](https://github.com/SeanF879/Sean-s-Lab/blob/main/Project-1)  
 [Project 2](https://github.com/SeanF879/Sean-s-Lab/blob/main/Project-2)
+[Project 3](https://github.com/SeanF879/Sean-s-Lab/blob/main/Project-3)
