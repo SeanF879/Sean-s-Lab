@@ -13,7 +13,7 @@ The first model used for this project was an OLS Regression.  These are always a
 
 The below R output shows the absolute error for predicted versus actual populations in each administrative region.  
 
-<img width="805" alt="Kenya_1" src="https://user-images.githubusercontent.com/78227412/115165747-67eeee00-a07d-11eb-92b9-0412b4a7dafa.png">
+<img width="400" alt="Kenya_1" src="https://user-images.githubusercontent.com/78227412/115165747-67eeee00-a07d-11eb-92b9-0412b4a7dafa.png">
 
 The output confirms that the model was slightly overpridting populations, seemingly mostly in Southeastern Kenya, which has many urban/costal regions, so perhaps the model struggled with these types of special urban environments.
 
@@ -23,9 +23,8 @@ Model 2:  Random Forest
 
 Below is the R output for the node purity
 
-
-
+![Kenya_3](https://user-images.githubusercontent.com/78227412/115166129-7938fa00-a07f-11eb-9317-ebc04fe12cf6.png)
 
 Below is the R output for mean absolute error for the Random Forest model
 
-<img width="832" alt="Kenya_2" src="https://user-images.githubusercontent.com/78227412/115165749-69201b00-a07d-11eb-810b-31d53e5e3fb8.png">
+<img width="400" alt="Kenya_2" src="https://user-images.githubusercontent.com/78227412/115165749-69201b00-a07d-11eb-810b-31d53e5e3fb8.png">
