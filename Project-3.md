@@ -9,7 +9,7 @@ Goals of this project: Use two machine learning methods predict population value
 
 Model 1:  Linear Regression
 
-The first model used for this project was an OLS Regression.  These are always a useful tool in any data scientists tooltik when trying to use variables to predict something.  But first, I needed to preprocess the data for the model, which was done by creatng a test and training data split from all the available data.  The model's prediction for the total population of Kenya was a little bit off, predicting it to have a total summed population of about 56 million.  However, compared to Kenya's actual population of a little over 55 million people, this seemed to be a rather good prediction.  The only other question was how accurate was it at predicting population in the individual admministrative regions.
+The first model used for this project was an OLS Regression.  These are always a useful tool in any data scientists tooltik when trying to use variables to predict something.  But first, I needed to preprocess the data for the model, which was done by creatng a test and training data split from all the available data.  The model's prediction for the total population of Kenya was a little bit off, predicting it to have a total summed population of about 55.2 million.  However, compared to Kenya's actual population of a little over 55.1 million people, this seemed to be a rather good prediction.  The only other question was how accurate was it at predicting population in the individual admministrative regions.
 
 The below R output shows the absolute error for predicted versus actual populations in each administrative region.  
 
@@ -19,7 +19,7 @@ The output confirms that the model was slightly overpridting populations, seemin
 
 
 Model 2:  Random Forest
-
+The preprocessing of the data used for the second model, the Random Forest, was very similiar to the Linear Regression's with a training/test data splitting.  The model's prediction for the total population however was better than the Linear Regression's being almost 10,000 people closer to the true value.  
 
 Below is the R output for the node purity
 
@@ -28,3 +28,8 @@ Below is the R output for the node purity
 Below is the R output for mean absolute error for the Random Forest model
 
 <img width="400" alt="Kenya_2" src="https://user-images.githubusercontent.com/78227412/115165749-69201b00-a07d-11eb-810b-31d53e5e3fb8.png">
+
+
+Conclusion:
+Both models were surprisngly good at preidcting the aggregate populations, with the Random Forest doing a little better, but both struggled with the asmaller scale predictions at the administrative region level.  However, the error was lower with the Random Forest model so that is the winner.  Most likely the spatial variations caused by desnley populated urban/costal regions threw off the model, because some areas contain things such as apartment living, tall buildings, etc... that all allow for desner populations than would be expected by the model especially because those things that allow for very densly populated regions don't exist in the majority fo the country.
+
